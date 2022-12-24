@@ -1,4 +1,4 @@
-package com.vission.singleton.domain;
+package com.vission.creating.singleton;
 
 
 /**
