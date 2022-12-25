@@ -1,5 +1,6 @@
 package com.vission.creating.factory.pojo.ram;
 
+import com.vission.creating.factory.enums.BrandEnum;
 import lombok.Data;
 import lombok.experimental.SuperBuilder;
 
@@ -8,7 +9,7 @@ import lombok.experimental.SuperBuilder;
 public class Ram {
 
     //品牌
-    private String brand;
+    private BrandEnum brand;
     //容量
     private int capacity;
     //频率
