@@ -2,8 +2,8 @@ package com.vission.behavioral.strategy;
 
 import com.google.common.collect.Lists;
 import com.vission.behavioral.strategy.collection.CollectionUtils;
-import com.vission.behavioral.strategy.domain.Cat;
-import com.vission.behavioral.strategy.domain.Dog;
+import com.vission.behavioral.strategy.pojo.Cat;
+import com.vission.behavioral.strategy.pojo.Dog;
 import com.vission.behavioral.strategy.sort.SortUtils;
 import com.vission.behavioral.strategy.sort.comparableStartegy.impl.CatHeightStrategy;
 import com.vission.behavioral.strategy.sort.comparableStartegy.impl.CatWeightStrategy;
@@ -22,7 +22,7 @@ public class Main {
                 Dog.builder().height(1).weight(4).build(),
                 Dog.builder().height(6).weight(3).build()
         };
-        //利用多态的特性 实现Comparable 可以使用Collections.bubblingSort()方法 也可以使用Arrays.bubblingSort()方法 抑或是自己封装的排序方法
+        //利用多态的特性 实现Comparable 可以使用Collections.sort()方法 也可以使用Arrays.sort()方法 抑或是自己封装的排序方法
         //但是该方案有个弊端 例如Cat没有实现Comparable接口 则无法使用该方案 可以将Cat理解为无法修改代码的第三方类 无法修改代码的第三方类是无法使用该方案的
         //同样为了遵循开闭原则 也不应该修改Cat类的代码 通过策略模式解耦可以解决该问题
         ArrayList<Dog> dogList = Lists.newArrayList(dogs);

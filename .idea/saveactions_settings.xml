@@ -4,9 +4,18 @@
     <option name="actions">
       <set>
         <option value="activate" />
+        <option value="organizeImports" />
         <option value="reformat" />
+        <option value="unqualifiedFieldAccess" />
+        <option value="unqualifiedMethodAccess" />
+        <option value="unqualifiedStaticMemberAccess" />
         <option value="missingOverrideAnnotation" />
+        <option value="useBlocks" />
+        <option value="generateSerialVersionUID" />
+        <option value="unnecessaryThis" />
         <option value="unnecessaryFinalOnLocalVariableOrParameter" />
+        <option value="suppressAnnotation" />
+        <option value="unnecessarySemicolon" />
       </set>
     </option>
     <option name="configurationPath" value="" />

@@ -1,4 +1,4 @@
-package com.vission.behavioral.strategy.domain;
+package com.vission.behavioral.strategy.pojo;
 
 import lombok.Builder;
 
