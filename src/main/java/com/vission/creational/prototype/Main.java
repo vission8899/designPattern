@@ -7,12 +7,13 @@ import com.vission.creational.prototype.utils.BeanUtil;
 import java.io.IOException;
 
 /**
- * 原型模式 浅拷贝 Flyweight Pattern 结构型模式
+ * 原型模式
  *
  * @author vission
  */
 public class Main {
 
+    //浅拷贝 Flyweight Pattern 结构型模式
     //cloneable 并没有 FastJson 通过序列化的clone方法好用 但是cloneable是java自带的
     public static void main(String[] args)
             throws IOException, ClassNotFoundException, InstantiationException, IllegalAccessException {

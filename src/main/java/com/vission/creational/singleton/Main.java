@@ -1,5 +1,10 @@
 package com.vission.creational.singleton;
 
+/**
+ * 单例模式
+ *
+ * @author vission
+ */
 public class Main {
 
     public static void main(String[] args) {

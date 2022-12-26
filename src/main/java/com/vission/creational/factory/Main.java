@@ -9,6 +9,11 @@ import com.vission.creational.factory.enums.PhoneModelEnum;
 import com.vission.creational.factory.phoneFactory.PhoneAbstractFactory;
 import java.math.BigDecimal;
 
+/**
+ * 工厂模式
+ *
+ * @author vission
+ */
 public class Main {
 
     //学习工程模式之前 请先带入 调用方 与服务提供方的场景

@@ -11,6 +11,11 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 
+/**
+ * 策略模式
+ *
+ * @author vission
+ */
 public class Main {
 
     public static void main(String[] args) {
