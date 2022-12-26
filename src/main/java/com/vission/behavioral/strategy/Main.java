@@ -1,12 +1,12 @@
 package com.vission.behavioral.strategy;
 
 import com.google.common.collect.Lists;
-import com.vission.behavioral.strategy.collection.CollectionUtils;
-import com.vission.behavioral.strategy.pojo.Cat;
-import com.vission.behavioral.strategy.pojo.Dog;
+import com.vission.behavioral.strategy.domain.Cat;
+import com.vission.behavioral.strategy.domain.Dog;
 import com.vission.behavioral.strategy.sort.SortUtils;
 import com.vission.behavioral.strategy.sort.comparableStartegy.impl.CatHeightStrategy;
 import com.vission.behavioral.strategy.sort.comparableStartegy.impl.CatWeightStrategy;
+import com.vission.behavioral.strategy.utils.CollectionUtils;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;

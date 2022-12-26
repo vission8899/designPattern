@@ -1,12 +1,12 @@
 package com.vission.creating.factory.phoneFactory;
 
 import com.vission.creating.factory.cpuFactory.CpuFactory;
+import com.vission.creating.factory.domain.cpu.Cpu;
+import com.vission.creating.factory.domain.phone.Iphone;
+import com.vission.creating.factory.domain.ram.Ram;
 import com.vission.creating.factory.enums.CpuTypeEnum;
 import com.vission.creating.factory.enums.PhoneModelEnum;
 import com.vission.creating.factory.enums.RamTypeEnum;
-import com.vission.creating.factory.pojo.cpu.Cpu;
-import com.vission.creating.factory.pojo.phone.Iphone;
-import com.vission.creating.factory.pojo.ram.Ram;
 import com.vission.creating.factory.ramFactory.RamFactory;
 import java.math.BigDecimal;
 

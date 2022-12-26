@@ -1,4 +1,4 @@
-package com.vission.creating.factory.pojo.phone;
+package com.vission.creating.factory.domain.phone;
 
 import lombok.Data;
 import lombok.EqualsAndHashCode;

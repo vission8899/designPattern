@@ -1,8 +1,8 @@
 package com.vission.creating.factory.ramFactory;
 
+import com.vission.creating.factory.domain.ram.Ram;
 import com.vission.creating.factory.enums.BrandEnum;
 import com.vission.creating.factory.enums.RamTypeEnum;
-import com.vission.creating.factory.pojo.ram.Ram;
 
 public class RamFactory {
 

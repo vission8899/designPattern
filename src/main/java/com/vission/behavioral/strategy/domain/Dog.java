@@ -1,4 +1,4 @@
-package com.vission.behavioral.strategy.pojo;
+package com.vission.behavioral.strategy.domain;
 
 import com.vission.behavioral.strategy.Comparable;
 import lombok.Builder;
@@ -19,6 +19,6 @@ public class Dog implements Comparable<Dog>, java.lang.Comparable<Dog> {
 
     @Override
     public int compareTo(Dog o) {
-        return Integer.compare(this.weight, o.weight);
+        return Integer.compare(weight, o.weight);
     }
 }

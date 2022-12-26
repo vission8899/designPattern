@@ -14,7 +14,7 @@ public class PhoneBrandFactory {
             case HUAWEI:
                 return new HuaweiPhoneFactory();
             default:
-                return null;
+                throw new RuntimeException("暂不支持该品牌");
         }
     }
 

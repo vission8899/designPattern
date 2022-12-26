@@ -1,4 +1,4 @@
-package com.vission.behavioral.strategy.collection;
+package com.vission.behavioral.strategy.utils;
 
 import com.vission.behavioral.strategy.Comparable;
 import com.vission.behavioral.strategy.sort.SortUtils;

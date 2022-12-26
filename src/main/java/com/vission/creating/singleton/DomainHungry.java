@@ -6,7 +6,6 @@ package com.vission.creating.singleton;
  *
  * @author vission
  */
-
 public class DomainHungry {
 
     private static final DomainHungry singleton;
@@ -27,7 +26,7 @@ public class DomainHungry {
     }
 
     public static DomainHungry getDomain() {
-        return singleton;
+        return DomainHungry.singleton;
     }
 
 }

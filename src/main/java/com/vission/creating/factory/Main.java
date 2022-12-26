@@ -1,12 +1,12 @@
 package com.vission.creating.factory;
 
+import com.vission.creating.factory.domain.cpu.Cpu;
+import com.vission.creating.factory.domain.phone.Iphone;
+import com.vission.creating.factory.domain.phone.Phone;
+import com.vission.creating.factory.domain.ram.Ram;
 import com.vission.creating.factory.enums.BrandEnum;
 import com.vission.creating.factory.enums.PhoneModelEnum;
 import com.vission.creating.factory.phoneFactory.PhoneAbstractFactory;
-import com.vission.creating.factory.pojo.cpu.Cpu;
-import com.vission.creating.factory.pojo.phone.Iphone;
-import com.vission.creating.factory.pojo.phone.Phone;
-import com.vission.creating.factory.pojo.ram.Ram;
 import java.math.BigDecimal;
 
 public class Main {
@@ -16,17 +16,17 @@ public class Main {
         //没有工厂模式之前的调用 往往还伴随大量复杂的调用文档供阅读
         //创建Iphone11
         //这是每个调用方所需代码量 而这段代码很明显上层服务提供方封装起来会更好 工厂模式就是如此引进的
-        Main.create(PhoneModelEnum.IPHONE_11_PRO_MAX);
-
+        PhoneModelEnum phoneModelEnum = PhoneModelEnum.IPHONE_11_PRO_MAX;
+        Phone iphone = Main.create(phoneModelEnum);
+        System.out.println(iphone);
         //以下是服务提供者使用工厂模式后 每个调用方所需的代码量 高下立判
         BrandEnum brandEnum = BrandEnum.APPLE;
         //brandEnum = BrandEnum.HUAWEI;
         //抽象工厂
         PhoneAbstractFactory phoneFactory = PhoneBrandFactory.createFactory(brandEnum);
-        PhoneModelEnum phoneModelEnum = PhoneModelEnum.IPHONE_11_PRO_MAX;
         //phoneModelEnum = PhoneModelEnum.MATE_50_PRO;
-        Phone phone = phoneFactory.creatPhone(phoneModelEnum);
-        System.out.println(phone);
+        Phone iphoneByFactory = phoneFactory.creatPhone(phoneModelEnum);
+        System.out.println(iphoneByFactory);
     }
 
     /**

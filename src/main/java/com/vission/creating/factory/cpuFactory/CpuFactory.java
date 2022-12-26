@@ -1,8 +1,8 @@
 package com.vission.creating.factory.cpuFactory;
 
+import com.vission.creating.factory.domain.cpu.Cpu;
 import com.vission.creating.factory.enums.BrandEnum;
 import com.vission.creating.factory.enums.CpuTypeEnum;
-import com.vission.creating.factory.pojo.cpu.Cpu;
 
 public class CpuFactory {
 

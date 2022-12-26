@@ -1,7 +1,7 @@
 package com.vission.creating.factory.phoneFactory;
 
+import com.vission.creating.factory.domain.phone.Phone;
 import com.vission.creating.factory.enums.PhoneModelEnum;
-import com.vission.creating.factory.pojo.phone.Phone;
 
 /**
  * 抽象工厂
