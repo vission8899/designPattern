@@ -7,10 +7,10 @@ import com.vission.behavioral.chainOfResponsibility.fluent.context.ProcessorCont
  *
  * @author vission
  */
-public interface Processor {
+public interface Processor<T extends ProcessorContext> {
 
-    ProcessorContext handel(ProcessorContext context);
+    T handel(T context);
 
-    ProcessorContext handel();
+    void handel();
 
 }

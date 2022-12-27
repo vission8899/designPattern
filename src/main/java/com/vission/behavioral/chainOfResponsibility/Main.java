@@ -1,8 +1,8 @@
 package com.vission.behavioral.chainOfResponsibility;
 
-import com.vission.behavioral.chainOfResponsibility.fluent.ProcessorExecute;
-import com.vission.behavioral.chainOfResponsibility.fluent.context.ProcessorContext;
-import com.vission.behavioral.chainOfResponsibility.fluent.strategy.FilterStrategy;
+import com.vission.behavioral.chainOfResponsibility.fluent.FilterProcessorExecute;
+import com.vission.behavioral.chainOfResponsibility.fluent.context.FilterProcessorContext;
+import com.vission.behavioral.chainOfResponsibility.fluent.strategy.FilterOrderStrategy;
 
 /**
  * 责任链模式 + 策略模式 + 适配器模式
@@ -18,10 +18,10 @@ public class Main {
      */
     public static void main(String[] args) {
         String commit = "枪+炮=死";
-        ProcessorExecute processorHandle = new ProcessorExecute();
-        ProcessorContext context = ProcessorContext.builder().context(commit).build();
-        Object execute = processorHandle.execute(context, new FilterStrategy());
-        System.out.println(execute);
+        FilterProcessorExecute processorExecute = new FilterProcessorExecute();
+        FilterProcessorContext context = FilterProcessorContext.builder().commit(commit).build();
+        String result = processorExecute.execute(context, new FilterOrderStrategy()).getCommit();
+        System.out.println(result);
     }
 
 }
