@@ -2,7 +2,7 @@ package com.vission.behavioral.template.impl;
 
 import com.vission.behavioral.template.DemoAbstractTemsplate;
 
-public class DemoTemsplateImpl extends DemoAbstractTemsplate {
+public class DemoTemplateImpl extends DemoAbstractTemsplate {
 
     @Override
     public void init() {

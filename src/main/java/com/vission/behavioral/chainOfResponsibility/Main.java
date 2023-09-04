@@ -18,10 +18,17 @@ public class Main {
      */
     public static void main(String[] args) {
         String commit = "枪+炮=死";
-        FilterProcessorExecute processorExecute = new FilterProcessorExecute();
         FilterProcessorContext context = FilterProcessorContext.builder().commit(commit).build();
-        String result = processorExecute.execute(context, new FilterOrderStrategy()).getCommit();
+        String result = new FilterProcessorExecute().execute(context, new FilterOrderStrategy()).getCommit();
         System.out.println(result);
+//      lambda表达式写法
+//        new ProcessorExecute() {
+//            @Override
+//            public ProcessorContext execute(ProcessorContext context, Strategy strategy) {
+//                return null;
+//            }
+//        };
+//        ProcessorExecute<FilterProcessorContext, FilterOrderStrategy> execute = (a,b)-> null;
     }
 
 }

@@ -1,6 +1,6 @@
 package com.vission.behavioral.template;
 
-import com.vission.behavioral.template.impl.DemoTemsplateImpl;
+import com.vission.behavioral.template.impl.DemoTemplateImpl;
 
 /**
  * 模板方法模式
@@ -10,7 +10,7 @@ import com.vission.behavioral.template.impl.DemoTemsplateImpl;
 public class Main {
 
     public static void main(String[] args) {
-        DemoAbstractTemsplate template = new DemoTemsplateImpl();
+        DemoAbstractTemsplate template = new DemoTemplateImpl();
         template.templateMethod();
     }
 }
