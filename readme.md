@@ -20,7 +20,7 @@
 | 享元模式 Flyweight Pattern                | ☑   | 2022年12月26日 |
 | 代理模式 Proxy pattern                    | ☑   | 2022年12月26日 |
 | 桥接模式 Bridge Pattern                   | ☐   |             |
-| 装饰模式 Decorator Pattern                | ☐   |             |
+| 装饰模式 Decorator Pattern                | ☑   | 2023年9月5日   |
 | 组合模式 Composite Pattern                | ☐   |             |
 | 外观模式 Facade Pattern                   | ☐   |             |
 | 模版方法模式 Template Method Pattern        | ☑   | 2022年12月26日 |
